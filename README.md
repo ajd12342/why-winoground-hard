@@ -2,6 +2,8 @@
 - Authors: [Anuj Diwan](https://ajd12342.github.io/), Layne Berry, [Eunsol Choi](https://www.cs.utexas.edu/~eunsol/), [David Harwath](https://www.cs.utexas.edu/~harwath/), [Kyle Mahowald](https://mahowak.github.io/)
 - [EMNLP 2022 Paper](https://arxiv.org/abs/2211.00768)
 
+:exclamation: This code release is still a work-in-progress: please raise an issue or send an email to `anuj.diwan@utexas.edu` and `layne.berry@utexas.edu` for questions.
+
 ## Setup
 ```bash
 conda create -n winoground python=3.6.9
@@ -36,4 +38,5 @@ Please cite our paper if you use our paper, code, finegrained Winoground tags or
   publisher = "Association for Computational Linguistics",
 }
 ```
+Feel free to contact `anuj.diwan@utexas.edu`  and `layne.berry@utexas.edu` with any questions!
 
