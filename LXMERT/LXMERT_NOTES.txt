@@ -1,0 +1,15 @@
+- Can get LXMERT from huggingface transformers, and access branch-specific outputs :D
+
+- In order to input images, need to first extract ROI features
+
+- LXMERT paper uses Bottom-Up/Top-Down's extracted COCO features, which come from Faster R-CNN w/ a ResNet-101 backbone
+
+- Anderson et al. release the Faster R-CNN they use in pycaffe format, so extract w/ this
+
+- LXMERT uses exactly 36 objects per image so no padding visual inputs
+
+- Looks like this repo does the same as the caffe one, but in pytorch: https://github.com/shilrley6/Faster-R-CNN-with-model-pretrained-on-Visual-Genome
+
+- LXMERT expects both features and boxes, but Faster R-CNN just gives boxes in convert script; adding to script so we get one file of features and a second file of boxes
+
+- LXMERT paper says it uses 9 language-only layers, but github code for LXMERT uses 12, and the outputs from the transformers version indicate only 7 language-only layers
