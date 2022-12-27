@@ -3,10 +3,11 @@
 - [EMNLP 2022 Paper](https://arxiv.org/abs/2211.00768)
 
 ## Setup
+```bash
 conda create -n winoground python=3.6.9
 conda activate winoground
 pip install -r requirements.txt
-
+```
 Next, follow the installation instructions at `https://github.com/GEM-benchmark/NL-Augmenter` to install NL-Augmenter.
 
 Download the Winoground dataset from `https://huggingface.co/datasets/facebook/winoground`. Place `examples.jsonl` and the extracted directory `images` inside `dataset`. 
