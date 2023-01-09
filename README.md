@@ -38,5 +38,16 @@ Please cite our paper if you use our paper, code, finegrained Winoground tags or
   publisher = "Association for Computational Linguistics",
 }
 ```
+Please also cite the wonderful paper that introduces the Winoground dataset:
+```bibtex
+@InProceedings{Thrush_2022_CVPR,
+    author    = {Thrush, Tristan and Jiang, Ryan and Bartolo, Max and Singh, Amanpreet and Williams, Adina and Kiela, Douwe and Ross, Candace},
+    title     = {Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {5238-5248}
+}
+```
 Feel free to contact `anuj.diwan@utexas.edu`  and `layne.berry@utexas.edu` with any questions!
 
