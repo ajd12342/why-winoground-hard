@@ -55,12 +55,21 @@ Generate augmented captions, embeddings of those captions, and the stratified tr
 ## Citations and Contact
 Please cite our paper if you use our paper, code, finegrained Winoground tags or the augmented Winoground examples in your work:
 ```bibtex
-@inproceeding{diwan2022lwhywinogroundhard,
-  author = {Diwan, Anuj and Berry, Layne and Choi, Eunsol and Harwath, David and Mahowald, Kyle},  
-  title = {Why is Winoground Hard? Investigating Failures in Visuolinguistic Compositionality},
-  year = 2022,
-  booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
-  publisher = "Association for Computational Linguistics",
+@inproceedings{diwan-etal-2022-winoground,
+    title = "Why is Winoground Hard? Investigating Failures in Visuolinguistic Compositionality",
+    author = "Diwan, Anuj  and
+      Berry, Layne  and
+      Choi, Eunsol  and
+      Harwath, David  and
+      Mahowald, Kyle",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.143",
+    pages = "2236--2250",
+    abstract = "Recent visuolinguistic pre-trained models show promising progress on various end tasks such as image retrieval and video captioning. Yet, they fail miserably on the recently proposed Winoground dataset, which challenges models to match paired images and English captions, with items constructed to overlap lexically but differ in meaning (e.g., {``}there is a mug in some grass{''} vs. {``}there is some grass in a mug{''}). By annotating the dataset using new fine-grained tags, we show that solving the Winoground task requires not just compositional language understanding, but a host of other abilities like commonsense reasoning or locating small, out-of-focus objects in low-resolution images. In this paper, we identify the dataset{'}s main challenges through a suite of experiments on related tasks (probing task, image retrieval task), data augmentation, and manual inspection of the dataset. Our analysis suggests that a main challenge in visuolinguistic models may lie in fusing visual and textual representations, rather than in compositional language understanding. We release our annotation and code at https://github.com/ajd12342/why-winoground-hard.",
 }
 ```
 Please also cite the wonderful paper that introduces the Winoground dataset:
