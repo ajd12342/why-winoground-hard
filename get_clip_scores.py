@@ -14,7 +14,11 @@ img_names = [winoground_path+'WinoGroundPics/'+ line.strip() + '.png' for line i
 img_list = [Image.open(fn) for fn in img_names]
 
 # Load all texts into a list here
-text_list = [line.strip() for line in open(winoground_path+'winoground_captions.txt')]
+raw = [json.loads(line) for line in open(winoground_path+'examples.jsonl')]
+text_list = []
+for raw in ex:
+    text_list.append(e['caption_0'])
+    text_list.append(e['caption_1'])
 
 images = th.stack([preprocess(img).to(device) for img in img_list])
 texts = clip.tokenize(text_list).to(device)

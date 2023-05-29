@@ -14,7 +14,11 @@ s = th.nn.Softmax(dim=1).cuda()
 test_feats = np.load(winoground_path+'winoground_features.npy')
 test_boxes = np.load(winoground_path+'winoground_boxes.npy')
 
-test_texts = [line.strip() for line in open(winoground_path+'winoground_captions.txt')]
+raw = [json.loads(line) for line in open(winoground_path+'examples.jsonl')]
+test_texts = []
+for e in raw:
+    test_texts.append(e['caption_0'])
+    test_texts.append(e['caption_1'])
 
 with th.no_grad():
     full_scores_matrix = th.empty((0,800)).cuda()
