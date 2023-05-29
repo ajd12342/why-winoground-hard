@@ -1,7 +1,6 @@
 import numpy as np
 
 def compute_metrics(x):
-    # From AVLnet code
     sx = np.sort(-x, axis=1)
     d = np.diag(-x)
     d = d[:, np.newaxis]
